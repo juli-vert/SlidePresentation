@@ -1,0 +1,61 @@
+.an-initial {
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+}
+
+.an-left {
+    animation: animateleft 2s;
+    -moz-animation: animateleft 2s;
+    -webkit-animation: animateleft 2s;
+}
+
+.an-right {
+    animation: animateright 2s;
+    -moz-animation: animateright 2s;
+    -webkit-animation: animateright 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes animateleft{
+    from {left: -1000px;} 
+    to {left: 0px;}
+}
+
+@-moz-keyframes animateleft{
+    from {left: -1000px;} 
+    to {left: 0px;}
+}
+
+@-webkit-keyframes animateleft{
+    from {left: -1000px;} 
+    to {left: 0px;}
+}
+
+@keyframes animateright{
+    from {right: -1000px} 
+    to {right: 0px;}
+}
+
+@-moz-keyframes animateright{
+    from {right: -1000px} 
+    to {right: 0px;}
+}
+
+@-webkit-keyframes animateright{
+    from {right: -1000px} 
+    to {right: 0px;}
+}

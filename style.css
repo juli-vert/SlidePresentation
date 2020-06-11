@@ -1,0 +1,85 @@
+body {
+    font: 15px/1.5 "Open Sans", sans-serif, "Fira Sans", Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.cl-flex-slider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cl-flex {
+    display: block;
+    position: relative;
+}
+
+.main {
+    width: 80%;
+    height: 90vh; 
+    margin: auto; 
+}
+
+.title {
+    width: 95%;
+    height: 20%;
+    margin: auto;
+    padding-bottom: 4vh;
+    font-size: 20vh;
+    font-weight: bold;
+}
+
+.content {
+    max-width: 95%;
+    height: 70%;
+    margin: auto;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content img {
+    width: fit-content;
+}
+
+.main-hidden {
+    visibility: hidden;
+}
+
+.slider {
+    top: 0;
+    width: 10%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    font-size: 10vh;
+    color: transparent;
+    font-weight: bold;
+}
+
+.left {
+    left: 0;
+    float: left;
+}
+
+.right {
+    right: 0;
+    float: right;
+}
+
+.left:hover, .right:hover{
+    background-color: gray;
+    opacity: 20%;
+    color: black;
+}
+/* Add your custome style for your content from here*/
