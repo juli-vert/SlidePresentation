@@ -2,6 +2,13 @@
 const api = ( () => {
     let index = 0;
     
+    const html = document.getElementsByTagName('html')[0];
+    
+    const toggleTheme = () => {
+        console.log(html.dataset.theme)
+        html.dataset.theme === "dark-mode" ? html.dataset.theme = "light-mode" : html.dataset.theme = "dark-mode";
+    }  
+    
     const sleep = (ms) => {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -25,7 +32,7 @@ const api = ( () => {
     }
     
     const moveSlideByClick = (e) => {
-        e.target.id === 'l' ? move('back') : e.target.id === 'r' ? move('fwd') : null
+        e.target.id === 'l' ? move('back') : e.target.id === 'r' ? move('fwd') : e.target.id === 'darkmodeinput' ? toggleTheme() : null
     }
 
     const createContent = () => {
