@@ -98,9 +98,11 @@ html[data-theme='dark-mode'] img{
 }
 
 .selector {
-    width: 100%;
+    width: 80%;
     height: 5vh;
-    margin: left;
+    text-align: left;
+    margin: auto;
+    padding-left: 10px;
     display: block;
 }
 
