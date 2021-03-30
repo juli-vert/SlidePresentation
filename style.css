@@ -84,3 +84,79 @@ body {
     color: black;
 }
 /* Add your custome style for your content from here*/
+
+/* Dark Mode */
+html {
+    transition: color 300ms, background-color 300ms;
+}
+
+html[data-theme='dark-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+}
+html[data-theme='dark-mode'] img{
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.selector {
+    width: 100%;
+    height: 5vh;
+    margin: left;
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin: 10px 0 10px 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.darkmode {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .darkmode:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: 1px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:focus + .darkmode {
+    box-shadow: 0 0 1px #ccc;
+  }
+  
+  input:checked + .darkmode:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .darkmode.round {
+    border-radius: 34px;
+  }
+  
+  .darkmode.round:before {
+    border-radius: 50%;
+  }
